@@ -1,7 +1,7 @@
 # Pyfang Language
 
 #### 介绍
-A program language powered by Python and Pyinstaller.
+A programming language powered by Python and Pyinstaller.
 Pyfang是一个基于Python和Pyinstaller的编程语言。
 
 #### 安装教程
