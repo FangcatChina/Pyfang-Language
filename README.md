@@ -34,3 +34,12 @@ Pyfang是一个基于Python和Pyinstaller的编程语言。
 #### 中文教程
 
 详见我们的[Wiki](https://gitee.com/Fangcatchina/pyfang-language/wikis/Home)！
+
+## Fork and Star us!
+```
+import time
+while True:
+    print('Fork ang Star us!')
+    print('在创作并收藏我们！')
+    time.sleep(0.1)
+```
