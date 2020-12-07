@@ -27,6 +27,8 @@ def valuecheck(checks):
                         return(True)
                     else:
                         return(False)
+                elif checks == 'enter':
+                    return(es.enterbox('Enter'))
                 else:
                     return('ValueError!')
 def pyfangrun(command):
@@ -89,4 +91,4 @@ Loading....
 ''')
 time.sleep(2)
 while True:
-    pyfangrun(es.codebox('Codebox','Codebox'))
+    pyfangrun(es.enterbox('Codebox','Codebox'))
