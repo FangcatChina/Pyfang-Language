@@ -1,6 +1,7 @@
 # Pyfang Language
 
 [![star](https://gitee.com/Fangcatchina/pyfang-language/badge/star.svg?theme=dark)](https://gitee.com/Fangcatchina/pyfang-language/stargazers)
+[![fork](https://gitee.com/Fangcatchina/pyfang-language/badge/fork.svg?theme=dark)](https://gitee.com/Fangcatchina/pyfang-language/members)
 
 #### 介绍
 
