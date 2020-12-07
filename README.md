@@ -1,5 +1,7 @@
 # Pyfang Language
 
+[![star](https://gitee.com/Fangcatchina/pyfang-language/badge/star.svg?theme=dark)](https://gitee.com/Fangcatchina/pyfang-language/stargazers)
+
 #### 介绍
 
 Pyfang是一个基于Python和Pyinstaller的编程语言。
