@@ -85,7 +85,7 @@ print('''
         |___/                |___/ 
 ''')
 print('''
-Pyfang IDLE 2.8 Copyright by Fangcat(Fang.Zixian)
+Pyfang IDLE 2.9 Copyright by Fangcat(Fang.Zixian)
 Using packages:Turtle,Easygui,Time
 Loading....
 ''')
