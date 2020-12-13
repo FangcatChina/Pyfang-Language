@@ -1,7 +1,6 @@
 # Pyfang Language
 
-[![star](https://gitee.com/Fangcatchina/pyfang-language/badge/star.svg?theme=dark)](https://gitee.com/Fangcatchina/pyfang-language/stargazers)
-[![fork](https://gitee.com/Fangcatchina/pyfang-language/badge/fork.svg?theme=dark)](https://gitee.com/Fangcatchina/pyfang-language/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.gnu.org/licenses/mit)
 
 #### 介绍 :tw-1f373: 
 
