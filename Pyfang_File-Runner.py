@@ -103,7 +103,7 @@ t1.write('''
  |_|    \__, |_| \__,_|_| |_|\__, |
          __/ |                __/ |
         |___/                |___/ 
-Pyfang 2.9 Copyright by Fangcat(Fang.Zixian)
+Pyfang 3.0 Copyright by Fangcat(Fang.Zixian)
 Using packages:Turtle,Easygui
 ''',font=('arial',12))
 t1.setheading(-90)
