@@ -29,6 +29,8 @@ def valuecheck(checks):
                         return(False)
                 elif checks == 'enter':
                     return(es.enterbox('Enter'))
+                elif checks == 'list':
+                    return(lista)
                 else:
                     return('ValueError!')
 def pyfangrun(command):
@@ -68,6 +70,10 @@ def pyfangrun(command):
             t2.goto(int(splited[1]),int(splited[2]))
         elif splited[0] == 'msgbox':
             es.msgbox(valuecheck(splited[1]),valuecheck(splited[2]),valuecheck(splited[3]))
+        elif splited[0] == 'listadd':
+            lista.append(valuecheck(splited[1]))
+        elif splited[0] == 'listpop':
+            lista.remove(valuecheck(splited[1]))
         else:
             es.msgbox("NameError: name "+splited[0]+"' is not defined",'Error')
     elif splited[0] == 'down':
@@ -92,7 +98,7 @@ t2 = tu.RawPen(cv3)
 t2.shape('turtle')
 t1.hideturtle()
 t1.penup()
-t1.goto(-350,70)
+t1.goto(-350,100)
 t1.color('green')
 t1.write('''
   _____        __                  
@@ -118,6 +124,7 @@ while True:
     t1.penup()
     t1.fd(24)
     if a == 'startrun':
+        lista = []
         t1.color('blue')
         t1.write('Running...',font=('arial',12))
         t1.setheading(-90)
