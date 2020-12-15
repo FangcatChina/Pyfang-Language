@@ -1,6 +1,7 @@
 import easygui as es
 import turtle as tu
 import tkinter as tk
+import random as rd
 bl = []
 bls = []
 def valuecheck(checks):
@@ -31,6 +32,8 @@ def valuecheck(checks):
                     return(es.enterbox('Enter'))
                 elif checks == 'list':
                     return(lista)
+                elif checks.split('#')[0] == 'randint':
+                    return(rd.randint(valuecheck(checks.split('#')[1]),valuecheck(checks.split('#')[2])))
                 else:
                     return('ValueError!')
 def pyfangrun(command):
@@ -109,8 +112,8 @@ t1.write('''
  |_|    \__, |_| \__,_|_| |_|\__, |
          __/ |                __/ |
         |___/                |___/ 
-Pyfang 3.1 Copyright by Fangcat(Fang.Zixian)
-Using packages:Turtle,Easygui
+Pyfang 3.2 Copyright by Fangcat(Fang.Zixian)
+Using packages:Turtle,Easygui,Random
 ''',font=('arial',12))
 t1.setheading(-90)
 t1.penup()
@@ -167,3 +170,4 @@ while True:
         t1.color('purple')   
     else:
         cmd.append(a)
+
