@@ -2,11 +2,11 @@
 
 
 
-[![License: MIT]( https://img.shields.io/badge/License-MIT-blue.svg ] https://www.gnu.org/licenses/mit )
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg]https://www.gnu.org/licenses/mit)
 
-[![GitHub release (latest by date)]( https://img.shields.io/github/v/release/fangcatchina/pyfang-language ] https://github.com/FangcatChina/Pyfang-Language/ )
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/fangcatchina/pyfang-language] https://github.com/FangcatChina/Pyfang-Language/)
 
-####Introduction
+#### Introduction
 
 
 
@@ -14,7 +14,7 @@ Pyfang is a programming language based on Python and pyinstaler.
 
 
 
-####Installation tutorial
+#### Installation tutorial
 
 
 
@@ -22,7 +22,7 @@ Double click to run
 
 
 
-####Instructions for use
+#### Instructions for use
 
 
 
@@ -30,21 +30,21 @@ See API documentation for details
 
 
 
-####Special effects
+#### Special effects
 
 
 
-Author's official website: [click me]（ http://fangcat-1.icoc.vc )
+Author's official website: [click me]（http://fangcatchina.gitee.io)
 
 
 
-####Recruiting talents
+#### Recruiting talents
 
 
 
 We need some good developers in Python, or some people who are good at finding bugs. If you are interested and want to join, please apply in the comments area. Please state your desired responsibilities when applying.
 
-#####Application conditions
+##### Application conditions
 
 
 
@@ -52,15 +52,15 @@ Developer: have at least one Python repository and have a distribution.
 
 Looking for bugs: people who are active in the field of programming.
 
-###Development tips
+### Development tips
 
 
 
-####Independent operation
+#### Independent operation
 
 
 
-In our new warehouse（ http://gitee.com/Fangcatchina/pyfang-standalone ）There are plug-ins that can run pyfang files independently!
+In our new warehouse（http://gitee.com/Fangcatchina/pyfang-standalone）There are plug-ins that can run pyfang files independently!
 
 ####Chinese Course
 
