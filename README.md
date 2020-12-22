@@ -100,13 +100,13 @@ Looking for bugs: people who are active in the field of programming.
 
 
 
-In our new warehouse（http://gitee.com/Fangcatchina/pyfang-standalone）There are plug-ins that can run pyfang files independently!
+In our new warehouse http://github.com/Fangcatchina/pyfang-standalone There are plug-ins that can run pyfang files independently!
 
 #### Chinese Course
 
 
 
-See our wiki（https://gitee.com/Fangcatchina/pyfang-language/wikis/Home)！
+See our wiki https://gitee.com/Fangcatchina/pyfang-language/wikis/Home ！
 
 
 
