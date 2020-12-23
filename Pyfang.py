@@ -7,6 +7,7 @@ import easygui as es
 import turtle as tu
 import tkinter as tk
 import random as rd
+import webbrowser as web
 bl = []
 bls = []
 def valuecheck(checks):
@@ -121,13 +122,15 @@ t1.write('''
          __/ |                __/ |
         |___/                |___/ 
 Pyfang 3.2 Copyright by Fangcat(Fang.Zixian)
-Using packages:Turtle,Easygui,Random
+Using packages:Turtle,Easygui,Random,Webbrowser
 ''',font=('arial',12))
 t1.setheading(-90)
 t1.penup()
 t1.fd(24)
 t1.color('purple')
-if es.choicebox('Choose a mode to use:','Pyfang',['IDLE','File-runner']) == 'File-Runner':
+
+a = es.choicebox('Choose a mode to use:','Pyfang',['IDLE','File-runner','Online Help'])
+if a == 'File-Runner':
     while True:
         a = es.enterbox('Enter your command here','Pyfang')
         t1.color('purple')
@@ -179,7 +182,7 @@ if es.choicebox('Choose a mode to use:','Pyfang',['IDLE','File-runner']) == 'Fil
             t1.color('purple')   
         else:
             cmd.append(a)
-else:
+elif a == 'IDLE':    
     while True:
         a = es.enterbox('>>>','Pyfang')
         t1.color('purple')
@@ -188,4 +191,5 @@ else:
         t1.penup()
         t1.fd(24)
         pyfangrun(a)
-
+else:
+    web.open_new('https://gitee.com/Fangcatchina/pyfang-language/wikis/Home')
