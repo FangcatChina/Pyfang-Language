@@ -121,7 +121,7 @@ t1.write('''
  |_|    \__, |_| \__,_|_| |_|\__, |
          __/ |                __/ |
         |___/                |___/ 
-Pyfang 3.2 Copyright by Fangcat(Fang.Zixian)
+Pyfang 3.2.4 Copyright by Fangcat(Fang.Zixian)
 Using packages:Turtle,Easygui,Random,Webbrowser
 ''',font=('arial',12))
 t1.setheading(-90)
