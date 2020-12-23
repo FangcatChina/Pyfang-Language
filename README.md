@@ -2,6 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.gnu.org/licenses/mit)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/fangcatchina/pyfang-language)](https://github.com/FangcatChina/Pyfang-Language/)
+## System Support/系统支持
+
+[![Windows](https://img.shields.io/badge/Windows-Supporting-blue)
+
+
 #### 介绍
 
 Pyfang是一个基于Python和Pyinstaller的编程语言。
