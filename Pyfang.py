@@ -39,7 +39,7 @@ def valuecheck(checks):
                 elif checks == 'list':
                     return(lista)
                 elif checks.split('#')[0] == 'randint':
-                    return(rd.randint(valuecheck(checks.split('#')[1])),valuecheck(checks.split('#')[2]))
+                    return(rd.randint(valuecheck(checks.split('#')[1]),valuecheck(checks.split('#')[2])))
                 else:
                     es.msgbox("ValueError: name '"+checks+"' is not defined",'Error')
                     raise ValueError
