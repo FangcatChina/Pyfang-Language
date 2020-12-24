@@ -4,7 +4,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/fangcatchina/pyfang-language)](https://github.com/FangcatChina/Pyfang-Language/)
 ## System Support/系统支持
 
-[![Windows](https://img.shields.io/badge/Windows-Supporting-blue)
+![Windows](https://img.shields.io/badge/Windows-Supporting-blue)
 
 
 #### 介绍
