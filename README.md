@@ -8,6 +8,14 @@
 ![Mac OS](https://img.shields.io/badge/Mac%20OS-Not%20Supported-orange)
 ![Linux](https://img.shields.io/badge/Linux-Not%20Supported-orange)
 
+### .Py File
+![Python](https://img.shields.io/badge/Python-3.7-blue)
+![Windows](https://img.shields.io/badge/Windows-Supported-green)
+![Mac OS](https://img.shields.io/badge/Mac%20OS-Supported-green)
+![Linux](https://img.shields.io/badge/Linux-Supported-green)
+
+
+
 ## 介绍
 
 Pyfang是一个基于Python和Pyinstaller的编程语言。
