@@ -4,15 +4,15 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/fangcatchina/pyfang-language)](https://github.com/FangcatChina/Pyfang-Language/)
 ## System Support/系统支持
 
-![Windows](https://img.shields.io/badge/Windows-Supported-green)
+![Windows](https://img.shields.io/badge/Windows-Supported-brightgreen)
 ![Mac OS](https://img.shields.io/badge/Mac%20OS-Not%20Supported-orange)
 ![Linux](https://img.shields.io/badge/Linux-Not%20Supported-orange)
 
 ### .Py File
 ![Python](https://img.shields.io/badge/Python-3.7-blue)
-![Windows](https://img.shields.io/badge/Windows-Supported-green)
-![Mac OS](https://img.shields.io/badge/Mac%20OS-Supported-green)
-![Linux](https://img.shields.io/badge/Linux-Supported-green)
+![Windows](https://img.shields.io/badge/Windows-Supported-brightgreen)
+![Mac OS](https://img.shields.io/badge/Mac%20OS-Supported-brightgreen)
+![Linux](https://img.shields.io/badge/Linux-Supported-brightgreen)
 
 
 
