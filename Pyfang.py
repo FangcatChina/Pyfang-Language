@@ -84,6 +84,8 @@ def pyfangrun(command):
             lista.append(valuecheck(splited[1]))
         elif splited[0] == 'listpop':
             lista.remove(valuecheck(splited[1]))
+        elif splited[0] == '//':
+            pass
         else:
             es.msgbox("NameError: name '"+splited[0]+"' is not defined",'Error')
             raise NameError
@@ -121,15 +123,14 @@ t1.write('''
  |_|    \__, |_| \__,_|_| |_|\__, |
          __/ |                __/ |
         |___/                |___/ 
-Pyfang 3.2.4 Copyright by Fangcat(Fang.Zixian)
+Pyfang 3.2.6 Copyright by Fangcat(Fang.Zixian)
 Using packages:Turtle,Easygui,Random,Webbrowser
 ''',font=('arial',12))
 t1.setheading(-90)
 t1.penup()
 t1.fd(24)
 t1.color('purple')
-
-a = es.choicebox('Choose a mode to use:','Pyfang',['IDLE','File-runner','Online Help'])
+a = es.choicebox('Choose a mode to use:','Pyfang',['IDLE','File-Runner','Online Help'])
 if a == 'File-Runner':
     while True:
         a = es.enterbox('Enter your command here','Pyfang')
@@ -154,12 +155,12 @@ if a == 'File-Runner':
             t1.fd(24)
             t1.color('purple')
         elif a.split(' ')[0] == 'save':
-            f = open(a.split(' ')[1], 'w', encoding='utf-8')
+            f = open(es.fileopenbox('Open a file'), 'w', encoding='utf-8')
             for i in cmd:
                 f.write(i)
                 f.write('|')
         elif a.split(' ')[0] == 'runfile':
-            f = open(a.split(' ')[1],'r',encoding='utf-8')
+            f = open(es.fileopenbox('Open a file'),'r',encoding='utf-8')
             t1.color('blue')
             t1.write('Running...',font=('arial',12))
             t1.setheading(-90)
@@ -180,6 +181,8 @@ if a == 'File-Runner':
             t1.penup()
             t1.fd(24)
             t1.color('purple')   
+        elif a == 'clearcode':
+            cmd.clear()
         else:
             cmd.append(a)
 elif a == 'IDLE':    
