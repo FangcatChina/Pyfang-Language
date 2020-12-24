@@ -8,35 +8,35 @@
 ![Mac OS](https://img.shields.io/badge/Mac%20OS-Not%20Supported-orange)
 ![Linux](https://img.shields.io/badge/Linux-Not%20Supported-orange)
 
-#### 介绍
+## 介绍
 
 Pyfang是一个基于Python和Pyinstaller的编程语言。
 
-#### 安装教程
+## 安装教程
 
 直接双击运行
 
-#### 使用说明
+## 使用说明
 
 详见API文档
 
-#### 特技
+## 特技
 
-作者官方网站：[Click me](http://fangcat-1.icoc.vc)
+作者官方网站：[Click me](http://fangcatchina.gitee.io)
 
-#### 招贤纳士 
+## 招贤纳士 
 
 我们需要一些在Python领域比较好的开发者，或者一些善于找BUG的一些人。如果你感兴趣，想加入的话，请在评论区中进行申请，申请时请说明您想要的职责。
-##### 申请条件 
+### 申请条件 
 
 开发者：至少有一个Python代码仓库且拥有发行版。
 找BUG：在编程领域比较活跃的人员。
-### 开发提示
+## 开发提示
 
-#### 独立运行
+### 独立运行
 
 在我们的新仓库[Pyfang Standalone](http://gitee.com/Fangcatchina/pyfang-standalone)有可以让Pyfang文件独立运行的插件哦！
-#### 中文教程 
+### 中文教程 
 
 详见我们的[Wiki](https://gitee.com/Fangcatchina/pyfang-language/wikis/Home)！
 
@@ -52,7 +52,7 @@ while True:
 # Pyfang Language
 
 
-#### Introduction
+## Introduction
 
 
 
@@ -60,7 +60,7 @@ Pyfang is a programming language based on Python and pyinstaler.
 
 
 
-#### Installation tutorial
+## Installation tutorial
 
 
 
@@ -68,7 +68,7 @@ Double click to run
 
 
 
-#### Instructions for use
+## Instructions for use
 
 
 
@@ -76,7 +76,7 @@ See API documentation for details
 
 
 
-#### Special effects
+## Special effects
 
 
 
@@ -84,13 +84,13 @@ Author's official website: [click me]（http://fangcatchina.gitee.io)
 
 
 
-#### Recruiting talents
+## Recruiting talents
 
 
 
 We need some good developers in Python, or some people who are good at finding bugs. If you are interested and want to join, please apply in the comments area. Please state your desired responsibilities when applying.
 
-##### Application conditions
+### Application conditions
 
 
 
@@ -98,17 +98,17 @@ Developer: have at least one Python repository and have a distribution.
 
 Looking for bugs: people who are active in the field of programming.
 
-### Development tips
+## Development tips
 
 
 
-#### Independent operation
+### Independent operation
 
 
 
 In our new warehouse http://github.com/Fangcatchina/pyfang-standalone There are plug-ins that can run pyfang files independently!
 
-#### Chinese Course
+### Chinese Course
 
 
 
