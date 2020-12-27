@@ -8,6 +8,7 @@ import turtle as tu
 import tkinter as tk
 import random as rd
 import webbrowser as web
+import os
 bl = []
 bls = []
 def valuecheck(checks):
@@ -86,6 +87,10 @@ def pyfangrun(command):
             lista.remove(valuecheck(splited[1]))
         elif splited[0] == '//':
             pass
+        elif splited[0] == 'use':
+            os.system(splited[1])
+        elif splited[0] == 'sleep':
+            time.sleep(valuecheck(splited[1]))
         else:
             es.msgbox("NameError: name '"+splited[0]+"' is not defined",'Error')
             raise NameError
@@ -124,7 +129,7 @@ t1.write('''
          __/ |                __/ |
         |___/                |___/ 
 Pyfang 3.2.6 Copyright by Fangcat(Fang.Zixian)
-Using packages:Turtle,Easygui,Random,Webbrowser
+Using packages:Turtle,Easygui,Random,Webbrowser,OS
 ''',font=('arial',12))
 t1.setheading(-90)
 t1.penup()
@@ -156,6 +161,7 @@ if a == 'File-Runner':
             t1.color('purple')
         elif a.split(' ')[0] == 'save':
             f = open(es.fileopenbox('Open a file'), 'w', encoding='utf-8')
+            es.ccbox('Do you want to use a password?','psw',('Yes','No'))
             for i in cmd:
                 f.write(i)
                 f.write('|')
