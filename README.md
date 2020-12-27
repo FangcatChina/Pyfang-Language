@@ -9,7 +9,7 @@
 ![Linux](https://img.shields.io/badge/Linux-Not%20Supported-orange)
 
 ### .Py File
-![Python](https://img.shields.io/badge/Python-3.7-blue)
+![Python](https://img.shields.io/badge/Python-3.7.3-blue)
 ![Windows](https://img.shields.io/badge/Windows-Supported-brightgreen)
 ![Mac OS](https://img.shields.io/badge/Mac%20OS-Supported-brightgreen)
 ![Linux](https://img.shields.io/badge/Linux-Supported-brightgreen)
