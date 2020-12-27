@@ -1,6 +1,6 @@
 # Pyfang Language
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.gnu.org/licenses/mit)
+![GitHub](https://img.shields.io/github/license/fangcatchina/pyfang-language)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/fangcatchina/pyfang-language)](https://github.com/FangcatChina/Pyfang-Language/)
 ## System Support/系统支持
 
