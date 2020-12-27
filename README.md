@@ -2,6 +2,8 @@
 
 ![GitHub](https://img.shields.io/github/license/fangcatchina/pyfang-language)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/fangcatchina/pyfang-language)](https://github.com/FangcatChina/Pyfang-Language/)
+![GitHub last commit](https://img.shields.io/github/last-commit/fangcatchina/pyfang-language)
+![GitHub Release Date](https://img.shields.io/github/release-date/fangcatchina/pyfang-language)
 ## System Support/系统支持
 
 ![Windows](https://img.shields.io/badge/Windows-Supported-brightgreen)
