@@ -4,6 +4,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/fangcatchina/pyfang-language)](https://github.com/FangcatChina/Pyfang-Language/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/fangcatchina/pyfang-language)
 ![GitHub Release Date](https://img.shields.io/github/release-date/fangcatchina/pyfang-language)
+[![Gitter](https://badges.gitter.im/fangcatchina-Pyfang-language/community.svg)](https://gitter.im/fangcatchina-Pyfang-language/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 ## System Support/系统支持
 
 ![Windows](https://img.shields.io/badge/Windows-Supported-brightgreen)
