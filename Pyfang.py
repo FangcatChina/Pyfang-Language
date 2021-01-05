@@ -1,8 +1,6 @@
 '''
 This project using MIT Open Source Agreement.
-Author is Fangfang.
 '''
-
 import easygui as es
 import turtle as tu
 import tkinter as tk
@@ -28,8 +26,6 @@ def valuecheck(checks):
             else:
                 if list(checks)[0] == "'" and list(checks)[-1] == "'":
                     return(str(checks.split("'")[1]))
-                elif checks == 'input':
-                    return(input())
                 elif checks.split('#')[0] == 'if':
                     if valuecheck(checks.split('#')[1]) == valuecheck(checks.split('#')[2]):
                         return(True)
@@ -41,9 +37,12 @@ def valuecheck(checks):
                     return(lista)
                 elif checks.split('#')[0] == 'randint':
                     return(rd.randint(valuecheck(checks.split('#')[1]),valuecheck(checks.split('#')[2])))
+                elif checks == 'fileopen':
+                    return(es.fileopenbox())
+                elif checks == 'filesave':
+                    return(es.filesavebox())
                 else:
                     es.msgbox("ValueError: name '"+checks+"' is not defined",'Error')
-                    raise ValueError
 def pyfangrun(command):
     splited = command.split(' ')
     if len(splited) >= 2:
@@ -55,7 +54,7 @@ def pyfangrun(command):
             else:
                 bl.append(splited[0])
                 bls.append(valuecheck(splited[2]))
-        elif splited[0] == 'print':
+        elif splited[0] == 'output':
             t1.color('green')
             t1.write(valuecheck(splited[1]),font=('arial',12))
             t1.setheading(-90)
@@ -85,6 +84,8 @@ def pyfangrun(command):
             lista.append(valuecheck(splited[1]))
         elif splited[0] == 'listpop':
             lista.remove(valuecheck(splited[1]))
+        elif splited[0] == 'browse':
+            web.open_new_tab(valuecheck(splited[2]))
         elif splited[0] == '//':
             pass
         elif splited[0] == 'use':
@@ -128,7 +129,7 @@ t1.write('''
  |_|    \__, |_| \__,_|_| |_|\__, |
          __/ |                __/ |
         |___/                |___/ 
-Pyfang 3.3 Copyright by Fangcat(Fang.Zixian)
+Pyfang 3.3.2 Copyright by Fangcat(Fang.Zixian)
 Using packages:Turtle,Easygui,Random,Webbrowser,OS
 ''',font=('arial',12))
 t1.setheading(-90)
@@ -161,7 +162,6 @@ if a == 'File-Runner':
             t1.color('purple')
         elif a.split(' ')[0] == 'save':
             f = open(es.fileopenbox('Open a file'), 'w', encoding='utf-8')
-            es.ccbox('Do you want to use a password?','psw',('Yes','No'))
             for i in cmd:
                 f.write(i)
                 f.write('|')
