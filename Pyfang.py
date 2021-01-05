@@ -7,8 +7,13 @@ import tkinter as tk
 import random as rd
 import webbrowser as web
 import os
+from wsgiref.simple_server import make_server
 bl = []
 bls = []
+lista = []
+def send(environ, start_response):    #This function was coded by 无情天魔精致 on Baidu.Thanks:P.
+    start_response('200 OK', [('Content-Type', 'text/html')])
+    return fileshttp      
 def valuecheck(checks):
     if checks in bl:
         return(bls[bl.index(checks)])
@@ -86,6 +91,11 @@ def pyfangrun(command):
             lista.remove(valuecheck(splited[1]))
         elif splited[0] == 'browse':
             web.open_new_tab(valuecheck(splited[2]))
+        elif splited[0] == 'server':
+            dk=valuecheck(splited[1])
+            fileshttp = valuecheck(splited[2])
+            httpd = make_server('', dk, send)
+            httpd.serve_forever()
         elif splited[0] == '//':
             pass
         elif splited[0] == 'use':
@@ -94,16 +104,40 @@ def pyfangrun(command):
             time.sleep(valuecheck(splited[1]))
         else:
             es.msgbox("NameError: name '"+splited[0]+"' is not defined",'Error')
-            raise NameError
     elif splited[0] == 'down':
         t2.pendown()
     elif splited[0] == 'up':
         t2.penup()
     elif splited[0] == 'clear':
         t2.clear()
+    elif splited[0] == 'info':
+        es.msgbox('''
+Pyfang copyright by Fangcat(http://fangcatchina.gitee.io)
+Using MIT Open Source Agreement.
+MIT License
+
+Copyright (c) 2020 Fangcat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+        ''','Pyfang')
     else:
         es.msgbox("NameError: name '"+splited[0]+"' is not defined",'Error')
-        raise NameError
 cmd = []
 r = tu._Root()
 r.set_geometry(800,800,0,0)
@@ -129,8 +163,10 @@ t1.write('''
  |_|    \__, |_| \__,_|_| |_|\__, |
          __/ |                __/ |
         |___/                |___/ 
-Pyfang 3.3.2 Copyright by Fangcat(Fang.Zixian)
-Using packages:Turtle,Easygui,Random,Webbrowser,OS
+-----------------------------------------------------------
+|Pyfang 3.3.2 Copyright by Fangcat                         |
+|Using packages:Turtle,Easygui,Random,Webbrowser,OS,wsgiref|
+-----------------------------------------------------------
 ''',font=('arial',12))
 t1.setheading(-90)
 t1.penup()
