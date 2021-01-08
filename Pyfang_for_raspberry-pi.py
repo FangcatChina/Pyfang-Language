@@ -1,6 +1,7 @@
 '''
 This project using MIT Open Source Agreement.
 '''
+import RPi.GPIO as RPi
 import easygui as es
 import turtle as tu
 import tkinter as tk
@@ -12,6 +13,7 @@ from wsgiref.simple_server import make_server
 bl = []
 bls = []
 lista = []
+GPIOset = []
 def send(environ, start_response):    #This function was coded by 无情天魔精致 on Baidu.Thanks:P.
     start_response('200 OK', [('Content-Type', 'text/html')])
     return fileshttp      
@@ -47,6 +49,12 @@ def valuecheck(checks):
                     return(es.fileopenbox())
                 elif checks == 'filesave':
                     return(es.filesavebox()) 
+                elif checks.split('#')[0] == 'GPIO_in':
+                    if valuecheck(splited[1]) in GPIOset:
+                        RPi.input(valuecheck(checks.split('#')[1]))
+                    else:
+                        RPi.setup(valuecheck(splited[1]),RPi.IN)
+                        RPi.input(valuecheck(checks.split('#')[1]))
                 else:
                     es.msgbox("ValueError: name '"+checks+"' is not defined",'Error')
 def pyfangrun(command):
@@ -97,6 +105,24 @@ def pyfangrun(command):
             fileshttp = valuecheck(splited[2])
             httpd = make_server('', dk, send)
             httpd.serve_forever()
+        elif splited[0] == 'GPIO_high':
+            if valuecheck(splited[1]) in GPIOset:
+                RPi.output(valuecheck(splited[1]),RPi.HIGH)
+            else:
+                RPi.setup(valuecheck(splited[1]),RPi.OUT)
+                RPi.output(valuecheck(splited[1]),RPi.HIGH)
+        elif splited[0] == 'GPIO_low':
+            if valuecheck(splited[1]) in GPIOset:
+                RPi.output(valuecheck(splited[1]),RPi.LOW)
+            else:
+                RPi.setup(valuecheck(splited[1]),RPi.OUT)
+                RPi.output(valuecheck(splited[1]),RPi.LOW)
+        elif splited[0] == 'GPIO_out':
+            if valuecheck(splited[1]) in GPIOset:
+                RPi.output(valuecheck(splited[1]),valuecheck(splited[2]))
+            else:
+                RPi.setup(valuecheck(splited[1]),RPi.OUT)
+                RPi.output(valuecheck(splited[1]),valuecheck(splited[2]))
         elif splited[0] == '//':
             pass
         elif splited[0] == 'use':
