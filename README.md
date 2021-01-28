@@ -46,7 +46,7 @@ Pyfang是一个基于Python和Pyinstaller的编程语言。
 
 ### 独立运行
 
-在我们的新仓库[Pyfang Standalone](http://gitee.com/Fangcatchina/pyfang-standalone)有可以让Pyfang文件独立运行的插件哦！
+在我们的新仓库[Pyfang Standalone](http://github.com/Fangcatchina/pyfang-standalone)有可以让Pyfang文件独立运行的插件哦！
 ### 中文教程 
 
 详见我们的[Wiki](https://gitee.com/Fangcatchina/pyfang-language/wikis/Home)！
