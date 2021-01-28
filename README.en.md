@@ -61,7 +61,7 @@ In our new warehouse http://github.com/Fangcatchina/pyfang-standalone There are 
 
 
 
-See our wiki https://gitee.com/Fangcatchina/pyfang-language/wikis/Home ！
+See our wiki https://gitee.com/pyfang/pyfang-language/wikis/Home ！
 
 
 
@@ -70,6 +70,6 @@ See our wiki https://gitee.com/Fangcatchina/pyfang-language/wikis/Home ！
 ```
 import time
 while True:
-print('Fork ang Star us!')
+print('Fork and star us!')
 time.sleep (0.1)
 ```
