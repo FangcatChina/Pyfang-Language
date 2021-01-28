@@ -49,13 +49,13 @@ Pyfang是一个基于Python和Pyinstaller的编程语言。
 在我们的新仓库[Pyfang Standalone](http://github.com/Fangcatchina/pyfang-standalone)有可以让Pyfang文件独立运行的插件哦！
 ### 中文教程 
 
-详见我们的[Wiki](https://gitee.com/Fangcatchina/pyfang-language/wikis/Home)！
+详见我们的[Wiki](https://gitee.com/pyfang/pyfang-language/wikis/Home)！
 
 ## Fork and Star us!
 ```
 import time
 while True:
-    print('Fork ang Star us!')
+    print('Fork and Star us!')
     print('在创作并收藏我们！')
     time.sleep(0.1)
 ```
