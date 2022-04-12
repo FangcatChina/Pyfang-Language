@@ -5,16 +5,12 @@ import easygui as es
 import turtle as tu
 import tkinter as tk
 import random as rd
-import webbrowser as web
 import os
 import time
 from wsgiref.simple_server import make_server
 bl = []
 bls = []
-lista = []
-def send(environ, start_response):    #This function was coded by 无情天魔精致 on Baidu.Thanks:P.
-    start_response('200 OK', [('Content-Type', 'text/html')])
-    return fileshttp      
+lista = []    
 def valuecheck(checks):
     if checks in bl:
         return(bls[bl.index(checks)])
@@ -92,11 +88,6 @@ def pyfangrun(command):
             lista.remove(valuecheck(splited[1]))
         elif splited[0] == 'browse':
             web.open_new_tab(valuecheck(splited[2]))
-        elif splited[0] == 'server':
-            dk=valuecheck(splited[1])
-            fileshttp = valuecheck(splited[2])
-            httpd = make_server('', dk, send)
-            httpd.serve_forever()
         elif splited[0] == '//':
             pass
         elif splited[0] == 'use':
@@ -238,4 +229,4 @@ elif a == 'IDLE':
         t1.fd(24)
         pyfangrun(a)
 else:
-    web.open_new('https://gitee.com/pyfang/pyfang-language/wikis/Home')
+    web.open_new('https://gitee.com/pyfang/pyfang/wikis/Home')
