@@ -3,11 +3,11 @@ This project using MIT Open Source Agreement.
 '''
 import easygui as es
 import turtle as tu
+import webbrowser as web
 import tkinter as tk
 import random as rd
 import os
 import time
-from wsgiref.simple_server import make_server
 bl = []
 bls = []
 lista = []    
