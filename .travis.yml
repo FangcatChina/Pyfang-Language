@@ -16,7 +16,7 @@ install:
   - export TZ='Asia/Shanghai'
   - git config --global user.name FangcatChina
   - git config --global user.email 2950966704@qq.com
-  - pip install #依赖包
+  - pip install easygui
   - pip install pyinstaller
 script:
   - pyinstaller -F Pyfang.py
