@@ -14,18 +14,18 @@ install:
   - python -m pip install --upgrade pip
   - pip install --upgrade pip
   - export TZ='Asia/Shanghai'
-  - git config --global user.name 用户名
-  - git config --global user.email 邮箱
+  - git config --global user.name FangcatChina
+  - git config --global user.email 2950966704@qq.com
   - pip install #依赖包
   - pip install pyinstaller
 script:
-  - pyinstaller -F 1.py
+  - pyinstaller -F Pyfang.py
   - cd dist
   - git init
   - git add -A
   - git commit -m "CJH python exe Auto Builder"
   #推送至指定仓库，建议使用国内仓库，下载速度快。下方 TOKEN 以环境变量记录
-  - git push -f "https://${TOKEN_USER}:${TOKEN}@项目地址.git" master:master
+  - git push -f "https://${TOKEN_USER}:${TOKEN}@Pyfang/Pyfang.git" master:master
 branches:
   only:
     - master
