@@ -164,69 +164,74 @@ t1.setheading(-90)
 t1.penup()
 t1.fd(24)
 t1.color('purple')
-a = es.choicebox('Choose a mode to use:','Pyfang',['IDLE','File-Runner','Online Help'])
-if a == 'File-Runner':
-    while True:
-        a = es.enterbox('Enter your command here','Pyfang')
-        t1.color('purple')
-        t1.write(a,font=('arial',12))
-        t1.setheading(-90)
-        t1.penup()
-        t1.fd(24)
-        if a == 'startrun':
-            lista = []
-            t1.color('blue')
-            t1.write('Running...',font=('arial',12))
-            t1.setheading(-90)
-            t1.penup()
-            t1.fd(24)
-            for i in cmd:
-                pyfangrun(i)
-            t1.color('blue')
-            t1.write('Run was end',font=('arial',12))
-            t1.setheading(-90)
-            t1.penup()
-            t1.fd(24)
+mode = es.choicebox('Choose a mode to use:','Pyfang',['IDLE','File-Runner','Online Help'])
+def run():
+    global mode
+    if mode == 'File-Runner':
+            a =ent.get()
             t1.color('purple')
-        elif a.split(' ')[0] == 'save':
-            f = open(es.fileopenbox('Open a file'), 'w', encoding='utf-8')
-            for i in cmd:
-                f.write(i)
-                f.write('|')
-        elif a.split(' ')[0] == 'runfile':
-            f = open(es.fileopenbox('Open a file'),'r',encoding='utf-8')
-            t1.color('blue')
-            t1.write('Running...',font=('arial',12))
+            t1.write(a,font=('arial',12))
             t1.setheading(-90)
             t1.penup()
             t1.fd(24)
-            for i in f.readlines()[0].split('|'):
-                pyfangrun(i)
-            t1.color('blue')
-            t1.write('Run was end',font=('arial',12))
-            t1.setheading(-90)
-            t1.penup()
-            t1.fd(24)
+            if a == 'startrun':
+                lista = []
+                t1.color('blue')
+                t1.write('Running...',font=('arial',12))
+                t1.setheading(-90)
+                t1.penup()
+                t1.fd(24)
+                for i in cmd:
+                    pyfangrun(i)
+                t1.color('blue')
+                t1.write('Run was end',font=('arial',12))
+                t1.setheading(-90)
+                t1.penup()
+                t1.fd(24)
+                t1.color('purple')
+            elif a.split(' ')[0] == 'save':
+                f = open(es.fileopenbox('Open a file'), 'w', encoding='utf-8')
+                for i in cmd:
+                    f.write(i)
+                    f.write('|')
+            elif a.split(' ')[0] == 'runfile':
+                f = open(es.fileopenbox('Open a file'),'r',encoding='utf-8')
+                t1.color('blue')
+                t1.write('Running...',font=('arial',12))
+                t1.setheading(-90)
+                t1.penup()
+                t1.fd(24)
+                for i in f.readlines()[0].split('|'):
+                    pyfangrun(i)
+                t1.color('blue')
+                t1.write('Run was end',font=('arial',12))
+                t1.setheading(-90)
+                t1.penup()
+                t1.fd(24)
+                t1.color('purple')
+            elif a == 'listcode':
+                t1.color('orange')
+                t1.write(cmd,font=('arial',12))
+                t1.setheading(-90)
+                t1.penup()
+                t1.fd(24)
+                t1.color('purple')   
+            elif a == 'clearcode':
+                cmd.clear()
+            else:
+                cmd.append(a)
+    elif mode == 'IDLE':    
+            a = ent.get()
             t1.color('purple')
-        elif a == 'listcode':
-            t1.color('orange')
-            t1.write(cmd,font=('arial',12))
+            t1.write('>>>'+a,font=('arial',12))
             t1.setheading(-90)
             t1.penup()
             t1.fd(24)
-            t1.color('purple')   
-        elif a == 'clearcode':
-            cmd.clear()
-        else:
-            cmd.append(a)
-elif a == 'IDLE':    
-    while True:
-        a = es.enterbox('>>>','Pyfang')
-        t1.color('purple')
-        t1.write('>>>'+a,font=('arial',12))
-        t1.setheading(-90)
-        t1.penup()
-        t1.fd(24)
-        pyfangrun(a)
-else:
-    web.open_new('https://gitee.com/pyfang/pyfang/wikis/Home')
+            pyfangrun(a)
+    else:
+        web.open_new('https://gitee.com/pyfang/pyfang/wikis/Home')
+ent = tk.Entry(r)
+ent.pack(side=tk.LEFT,fill=tk.X)
+submit = tk.Button(r,text="OK",command=run)
+submit.pack(side=tk.LEFT)
+r.mainloop()
