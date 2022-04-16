@@ -156,8 +156,8 @@ t1.write(r'''
          __/ |                __/ |
         |___/                |___/ 
 -----------------------------------------------------------
-|Pyfang 3.3.2 Copyright by Fangcat                         |
-|Using packages:Turtle,Easygui,Random,Webbrowser,OS,wsgiref|
+|Pyfang 3.5 Copyright by Fangcat                         |
+|Using packages:Turtle,Easygui,Random,Webbrowser,OS|
 -----------------------------------------------------------
 ''',font=('arial',12))
 t1.setheading(-90)
